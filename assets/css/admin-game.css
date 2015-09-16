@@ -1,0 +1,57 @@
+table {
+	font-size: 10px;
+}
+table thead {
+	color: white;
+}
+table th, td {
+	text-align: center;
+}
+#tbl-session th:nth-child(odd) {
+	background-color: #443;
+}
+#tbl-session th:nth-child(even) {
+	background-color: #665;
+}
+#tbl-recruit tbody {
+	text-align: center;
+}
+#tbl-recruit th:nth-child(odd) {
+	background-color: #693;
+}
+#tbl-recruit th:nth-child(even) {
+	background-color: #8b5;
+}
+#tbl-gol th:nth-child(odd), #tbl-gol1 th:nth-child(odd), #tbl-gol2 th:nth-child(odd), #tbl-gol3 th:nth-child(odd) {
+	background-color: #77a;
+}
+#tbl-gol th:nth-child(even), #tbl-gol1 th:nth-child(even), #tbl-gol2 th:nth-child(even), #tbl-gol3 th:nth-child(even) {
+	background-color: #99c;
+}
+
+.table-scroll thead, .table-scroll tbody {
+  width: 100%;
+  display: block;
+}
+.table-scroll tbody {
+  height: 93px;
+  overflow-y: auto;
+}
+.table-scroll thead tr th:nth-child(1),
+.table-scroll tbody tr td:nth-child(1) {
+  width: 40px;
+}
+.table-scroll thead tr th:nth-child(2),
+.table-scroll tbody tr td:nth-child(2) {
+  width: 180px;
+}
+.table-scroll thead tr th:nth-child(3),
+.table-scroll tbody tr td:nth-child(3) {
+  width: 60px;
+}
+.table-scroll thead tr th:nth-last-child(1) {
+  width: 95px;
+}
+.table-scroll tbody tr td:nth-last-child(1) {
+  width: 75px;
+}

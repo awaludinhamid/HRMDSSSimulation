@@ -1,0 +1,70 @@
+table {
+	text-align: center;
+	font-size: 10px;
+}
+th {
+	text-align: center;
+}
+table thead {
+	color: white;
+}
+
+h4 {
+	font-weight: bold;
+}
+
+#select-action {
+	font-size: 10px;
+	height: 30px;
+	padding: 0px
+}
+
+#tbl-gol1 th:nth-child(odd), #tbl-gol2 th:nth-child(odd), #tbl-gol3 th:nth-child(odd),
+#tbl-gol4 th:nth-child(odd), #tbl-gol5 th:nth-child(odd), #tbl-gol6 th:nth-child(odd) {
+	background-color: #77a;
+}
+#tbl-gol1 th:nth-child(even), #tbl-gol2 th:nth-child(even), #tbl-gol3 th:nth-child(even),
+#tbl-gol4 th:nth-child(even), #tbl-gol5 th:nth-child(even), #tbl-gol6 th:nth-child(even) {
+	background-color: #99c;
+}
+
+#tbl-score th:nth-child(odd) {
+	background-color: #565;
+}
+#tbl-score th:nth-child(even) {
+	background-color: #787;
+}
+
+#tbl-alert th:nth-child(odd) {
+	background-color: #d40;
+}
+#tbl-alert th:nth-child(even) {
+	background-color: #f60;
+}
+
+#tbl-recruit th:nth-child(odd) {
+	background-color: #693;
+}
+#tbl-recruit th:nth-child(even) {
+	background-color: #8b5;
+}
+
+#tbl-mdl-recruit th:nth-child(odd) {
+	background-color: #693;
+}
+#tbl-mdl-recruit th:nth-child(even) {
+	background-color: #8b5;
+}
+#tbl-mdl-recruit td:nth-child(6) {
+	background-color: #eec;
+}
+
+#tr-manage td:nth-child(odd) {
+	background-color: #693;
+}
+#tr-manage td:nth-child(even) {
+	background-color: #8b5;
+}
+#tbl-manage td:nth-child(2) {
+	background-color: #eec;
+}

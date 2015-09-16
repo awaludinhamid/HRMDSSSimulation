@@ -1,0 +1,27 @@
+table {
+	text-align: center;
+	font-size: 10px;
+}
+table th {
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+}
+table thead {
+	color: white;
+}
+#tbl-gol th:nth-child(odd), #tbl-gol1 th:nth-child(odd), #tbl-gol2 th:nth-child(odd), #tbl-gol3 th:nth-child(odd) {
+	background-color: #77a;
+}
+#tbl-gol th:nth-child(even), #tbl-gol1 th:nth-child(even), #tbl-gol2 th:nth-child(even), #tbl-gol3 th:nth-child(even) {
+	background-color: #99c;
+}
+#tbl-score th:nth-child(odd) {
+	background-color: #433;
+}
+#tbl-score th:nth-child(even) {
+	background-color: #655;
+}
+#tbl-score td:nth-child(1) {
+	background-color: #aac;
+}

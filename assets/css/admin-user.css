@@ -1,0 +1,42 @@
+table {
+	font-size: 10px;
+}
+table thead {
+	color: white;
+}
+th {
+	text-align: center;
+}
+table th:nth-child(odd) {
+	background-color: #433;
+}
+table th:nth-child(even) {
+	background-color: #655;
+}
+#tbl-user-input {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+#tbl-user-input td {
+	padding: 1px;
+}
+#tbl-user-input th {
+	padding: 8px;
+}
+
+.table-scroll thead, .table-scroll tbody {
+  width: 100%;
+  display: block;
+}
+.table-scroll tbody {
+  height: 310px;
+  overflow-y: auto;
+}
+.table-scroll thead tr th,
+.table-scroll tbody tr td {
+  width: 175px;
+}
+.table-scroll thead tr th:nth-last-child(1),
+.table-scroll tbody tr td:nth-last-child(1) {
+  width: 75px;
+}
