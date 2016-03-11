@@ -45,7 +45,11 @@ class TblUser extends CI_Controller {
   public function login() {
     $name = filter_input(INPUT_POST,"name");
     $password = filter_input(INPUT_POST,"password");
-    echo $this->tbluserfactory->verifyLogin($name,$password);
+    if($name == "" || $password == "") {
+      echo false;
+    } else {
+      echo $this->tbluserfactory->verifyLogin($name,$password);
+    }
   }
 }
 

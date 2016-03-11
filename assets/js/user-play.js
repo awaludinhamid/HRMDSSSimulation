@@ -1,4 +1,5 @@
 $(document).ready(function() {
+  $("div#loader").show(1).delay(2000).hide(1);
   //navigation bar
   $(window).bind("load",function() {
     $("#select-play").addClass("active");			
@@ -303,28 +304,28 @@ $(document).ready(function() {
 	//table header section
 	$("#tbl-gol1 thead, #tbl-gol2 thead, #tbl-gol3 thead").append(				
 		"<tr>"+
-			"<th width='300'>NAMA &amp; UMUR</th>"+
-			"<th width='40'>INDEKS KEPUTUSAN</th>"+
-			"<th width='50'>TINDAKAN</th>"+				
-			"<th width='90'>LAMA KERJA</th>"+				
-			"<th width='70'>IHK TAHUN LALU</th>"+						
-			"<th width='70'>IHK TAHUN INI</th>"+			
-			"<th width='60'>ACTION</th>"+
+			"<th width='300'>NAME &amp; AGE</th>"+
+			"<th width='40'>DECISION INDEX</th>"+
+			"<th width='50'>ACTION</th>"+				
+			"<th width='90'>WORKING YEAR</th>"+				
+			"<th width='70'>LAST YEAR IHK</th>"+						
+			"<th width='70'>THIS YEAR IHK</th>"+			
+			"<th></th>"+
 		"</tr>");
 	$("#tbl-gol4 thead, #tbl-gol5 thead, #tbl-gol6 thead").append(				
 		"<tr>"+
 			"<th width='30'>NO</th>"+
-			"<th width='50'>LAMA KERJA</th>"+
-			"<th width='70'>NIK</th>"+				
-			"<th width='300'>NAMA</th>"+				
-			"<th width='50'>UMUR</th>"+						
-			"<th width='50'>TINDAKAN</th>"+						
-			"<th width='50'>INDEKS KEPUTUSAN</th>"+						
-			"<th width='50'>NILAI KENAIKAN</th>"+						
-			"<th width='50'>BIAYA LAIN</th>"+						
-			"<th width='50'>LAMA KERJA</th>"+						
-			"<th width='50'>HASIL KARYA</th>"+						
-			"<th width='50'>EFEKTIVITAS TINDAKAN</th>"+
+			"<th width='50'>WORKING YEAR</th>"+
+			"<th width='70'>ID</th>"+				
+			"<th width='300'>NAME</th>"+				
+			"<th width='50'>AGE</th>"+						
+			"<th width='50'>ACTION</th>"+						
+			"<th width='50'>DECISION INDEX</th>"+						
+			"<th width='50'>VALUE INCREASE</th>"+						
+			"<th width='50'>ADDITIONAL COST</th>"+						
+			"<th width='50'>WORKING YEAR</th>"+						
+			"<th width='50'>MASTERPIECE</th>"+						
+			"<th width='50'>ACTION EFFECTIVITY</th>"+
 		"</tr>");
 	
 	//centering every button in the table

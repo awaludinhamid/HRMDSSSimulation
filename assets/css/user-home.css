@@ -1,4 +1,4 @@
-table {
+/*table {
 	text-align: center;
 	font-size: 10px;
 }
@@ -10,18 +10,21 @@ table th {
 table thead {
 	color: white;
 }
+#tbl-gol, #tbl-gol1, #tbl-gol2, #tbl-gol3, #tbl-score {
+  box-shadow: #444 1px 2px 2px;  
+}
 #tbl-gol th:nth-child(odd), #tbl-gol1 th:nth-child(odd), #tbl-gol2 th:nth-child(odd), #tbl-gol3 th:nth-child(odd) {
-	background-color: #77a;
+	background-color: #37b;
 }
 #tbl-gol th:nth-child(even), #tbl-gol1 th:nth-child(even), #tbl-gol2 th:nth-child(even), #tbl-gol3 th:nth-child(even) {
-	background-color: #99c;
+	background-color: #159;
 }
 #tbl-score th:nth-child(odd) {
-	background-color: #433;
+	background-color: #37b;
 }
 #tbl-score th:nth-child(even) {
-	background-color: #655;
+	background-color: #159;
 }
 #tbl-score td:nth-child(1) {
 	background-color: #aac;
-}
+}*/

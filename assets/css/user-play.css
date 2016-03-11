@@ -1,4 +1,4 @@
-table {
+/*table {
 	text-align: center;
 	font-size: 10px;
 }
@@ -7,7 +7,7 @@ th {
 }
 table thead {
 	color: white;
-}
+}*/
 
 h4 {
 	font-weight: bold;
@@ -19,7 +19,7 @@ h4 {
 	padding: 0px
 }
 
-#tbl-gol1 th:nth-child(odd), #tbl-gol2 th:nth-child(odd), #tbl-gol3 th:nth-child(odd),
+/*#tbl-gol1 th:nth-child(odd), #tbl-gol2 th:nth-child(odd), #tbl-gol3 th:nth-child(odd),
 #tbl-gol4 th:nth-child(odd), #tbl-gol5 th:nth-child(odd), #tbl-gol6 th:nth-child(odd) {
 	background-color: #77a;
 }
@@ -67,4 +67,4 @@ h4 {
 }
 #tbl-manage td:nth-child(2) {
 	background-color: #eec;
-}
+}*/

@@ -10,8 +10,31 @@
 </head>
 
 <body>
-	<div class="content-filler-user">
-	</div>
+  <div class="container-fluid content-filler-user">
+    <table class="table">
+      <thead>
+        <tr>
+          <th>NO</th>
+          <th>NAME</th>
+          <th>ID</th>
+          <th>USER ID</th>
+          <th>WORKING YEAR</th>
+          <th>AGE</th>
+          <th>GROUPS</th>
+          <th>FLAG</th>
+          <th>DESCRIPTION</th>
+          <th>CREATED BY</th>
+          <th>CREATED DATE</th>
+          <th>UPDATED BY</th>
+          <th>UPDATED DATE</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <div id="pagination" style="text-align: center">
+      <ul class="pagination"></ul>
+    </div>
+  </div>
 </body>
 </html>
 <?php

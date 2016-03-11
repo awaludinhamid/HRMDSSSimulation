@@ -14,11 +14,11 @@ echo "
 		<thead>
 			<tr>
 				<th width='50'>NO</th>
-                                <th width='100'>LAMA KERJA</th>
-                                <th width='130'>NIK</th>
-                                <th width='300'>NAMA</th>
-                                <th>UMUR</th>
-                                <th width='50'>ACTION</th>
+                                <th width='100'>WORKING YEAR</th>
+                                <th width='130'>ID</th>
+                                <th width='300'>NAME</th>
+                                <th>AGE</th>
+                                <th></th>
 			</tr>
                 </thead>
                 <tbody>
@@ -36,15 +36,15 @@ echo "
 						<td>{$employee->getName()}</td>
 						<td>{$employee->getUmur()}</td>
 ";
-                                if($counter == 1) {
+                                if($counter == 1000) {
 echo "
 					                                  
-                                                <td style='margin: 0; padding: 0'><button class='btn btn-success btn-sm' disabled> Edit&nbsp;<span class='glyphicon glyphicon-pencil'></span></button></td>
+                                                <td style='margin: 0; padding: 0'><button class='btn btn-success btn-sm' disabled title='Edit record'><span class='glyphicon glyphicon-pencil'></span></button></td>
 ";
                                 } else {
 echo "
 					      
-                                                <td style='margin: 0; padding: 0'><button class='btn btn-success btn-sm'>Edit&nbsp;<span class='glyphicon glyphicon-pencil'></span></button></td>
+                                                <td style='margin: 0; padding: 0'><button class='btn btn-success btn-sm' title='Edit record'><span class='glyphicon glyphicon-pencil'></span></button></td>
 ";
                                 }
 echo "

@@ -8,33 +8,51 @@
         <script src="<?php echo base_url('assets/js/jquery.min.js')?>"></script>
         <script src="<?php echo base_url('assets/js/bootstrap.min.js')?>"></script>
 	<title>HRM DSS Simulation Application</title>
+        <style>
+          div#loginbox {
+            margin-top: 10%;
+            box-shadow: 15px 15px 5px #888;
+          }
+          .panel-body {
+            padding-top:30px;
+          }
+          .input-group {
+            margin-bottom: 25px;
+          }
+          .form-group {
+            padding-left: 15px;
+          }
+          span#spanError {
+            text-align: center;
+            color: red;
+            font-weight: bold;
+          }
+        </style>
 </head>
 <body>
 	<div class="container">    
-		<div id="loginbox" style="margin:150px 400px; box-shadow: 15px 15px 5px #888" class="mainbox col-md-4 col-md-offset-3 col-sm-8 col-sm-offset-2">                    
+		<div id="loginbox" class="col-md-offset-4 col-md-4 col-sm-offset-3 col-sm-6">                    
 			<div class="panel panel-primary" >
 				<div class="panel-heading">
 					<span class="panel-title">Log In</span>
 				</div>   
-				<div style="padding-top:30px" class="panel-body" >													
+				<div class="panel-body" >													
 					<form id="loginform" class="form-horizontal" role="form">																	
-						<div style="margin-bottom: 25px" class="input-group">
+						<div class="input-group">
 							<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
 							<input id="login-username" type="text" class="form-control" name="username" value="" placeholder="username" required autofocus>                                        
 						</div>															
-						<div style="margin-bottom: 25px" class="input-group">
+						<div class="input-group">
 							<span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
 							<input id="login-password" type="password" class="form-control" name="password" placeholder="password" required>
 						</div>
-						<div style="margin-top:10px" class="form-group">
-							<div class="col-sm-12 controls">
-								<input id="btn-reset" type="reset" value="Reset" class="btn btn-default btn-md"/>
-								<span id="btn-login" class="btn btn-primary btn-md">Submit</span>
-							</div>
+						<div class="form-group">
+                                                        <input id="btn-reset" type="reset" value="Reset" class="btn btn-default btn-md"/>
+                                                        <span id="btn-login" class="btn btn-primary btn-md">Submit</span>
 						</div>  
 					</form>
 				</div>  
-                          <span id="spanError" style="text-align: center; color: red; font-weight: bold"></span>                   
+                          <span id="spanError"></span>                   
 			</div>  
 		</div>
 	</div>

@@ -15,6 +15,6 @@ class UserResult extends CI_Controller {
 
   public function index(){
     $this->authentication->login();
-        $this->load->view('userresultpage');
-    }
+    $this->load->view('userresultpage');
+  }
 }

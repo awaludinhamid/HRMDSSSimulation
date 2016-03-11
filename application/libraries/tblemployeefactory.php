@@ -7,10 +7,10 @@ class TblEmployeeFactory {
       $this->_ci =& get_instance();
       $this->_ci->load->model("tblemployeemodel");      
     }
-    
+
     public function getEmployees($flagEmpl,$userId,$gol) {
       if(!($userId == null || $userId == "")) {
-        $this->_ci->db->where("userId",$userId);
+        $this->_ci->db->where("user_id",$userId);
       }
       if(!($flagEmpl == null || $flagEmpl == "")) {
         $this->_ci->db->where("IFNULL(flag_empl,'N')",$flagEmpl);
@@ -18,9 +18,9 @@ class TblEmployeeFactory {
       if(!($gol == null || $gol == "")) {
         $this->_ci->db->where("golongan",$gol);
       } 
-      if($this->getCount($userId) == 0) {
+      /*if($this->getCount($userId) == 0) {
         
-      }
+      }*/
       $query = $this->_ci->db->get("tbl_employee");
       if($query->num_rows() > 0) {
         $employees = array();
@@ -28,10 +28,22 @@ class TblEmployeeFactory {
           $employees[] = $this->createObjectFromData($row);
         }
         return $employees;
-      } else {
-        
       }
-      return false;
+      return false;        
+    }
+    
+    public function getAllEmployees($limit,$start) {
+      $this->_ci->db->limit($limit,$start);
+      $query = $this->_ci->db->get("tbl_employee");
+      if($query->num_rows() > 0) {
+        /*$employees = array();
+        foreach($query->result() as $row) {
+          $employees[] = $this->createObjectFromData($row);
+        }
+        return $employees;*/
+        return $query->result();
+      }
+      return false;  
     }
     
     public function getEmployee($id = 0) {
@@ -44,6 +56,10 @@ class TblEmployeeFactory {
       return false;
     }
     
+    public function getCountAll() {
+      return $this->_ci->db->count_all("tbl_employee");
+    }
+    
     public function getCount($userId) {
       if($userId == null) {
         $this->_ci->db->where("user_id IS NULL");
@@ -54,12 +70,15 @@ class TblEmployeeFactory {
     }
     
     public function createObjectFromData($row) {
-      $employee = new TblSetupEmployeeModel();
+      $employee = new TblEmployeeModel();
       $employee->setId($row->id);
+      $employee->setName($row->name);
+      $employee->setNik($row->nik);
+      $employee->setUserId($row->user_id);
       $employee->setLamaKerja($row->lama_kerja);
-      $employee->setLamaKerjaTh($row->lama_kerja_th);
-      $employee->setGolongan($row->golongan);
       $employee->setUmur($row->umur);
+      $employee->setGolongan($row->golongan);
+      $employee->setFlagEmpl($row->flag_empl);
       $employee->setDescription($row->description);
       $employee->setCreatedBy($row->created_by);
       $employee->setCreatedDate($row->created_date);

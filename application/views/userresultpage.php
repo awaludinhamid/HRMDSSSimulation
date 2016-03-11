@@ -9,7 +9,19 @@
     <script src="<?php echo base_url('assets/js/user-result.js')?>"></script>
 </head>
 <body>
-	<div class="content-filler-user">
+	<div class="container-fluid content-filler-user">
+          <table id="tbl-score" class="table table-hover table-bordered">
+                  <thead>
+                          <tr>
+                                  <th width="50">RANKING</th>
+                                  <th width="100">PLAYER NAME</th>
+                                  <th width="130">COMPANY NAME</th>				
+                                  <th width="150">CURRENT YEAR</th>				
+                                  <th width="150">PROFIT-LOSS UNTIL THIS YEAR</th>
+                          </tr>
+                  </thead>
+                  <tbody></tbody>
+          </table>
 	</div>
 </body>
 </html>
